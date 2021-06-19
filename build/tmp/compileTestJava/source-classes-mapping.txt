@@ -1,0 +1,10 @@
+testSuites/CalculatorTest.java
+ testSuites.CalculatorTest
+testSuites/ClassTest.java
+ testSuites.ClassTest
+compute/Runnable.java
+ compute.Runnable
+compute/Calculator.java
+ compute.Calculator
+testSuites/SeleniumTest.java
+ testSuites.SeleniumTest
