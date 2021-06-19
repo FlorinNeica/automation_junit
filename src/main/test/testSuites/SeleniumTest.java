@@ -82,11 +82,15 @@ public class SeleniumTest {
 
 			WebElement resultTitle = we.findElement(By.xpath(".."));
 
-			String title = resultTitle.getAttribute("href");
+			String resultLink = resultTitle.getAttribute("href");
 
-			System.out.println(title + "\r\n");
+			System.out.println(resultLink + "\r\n");
+
+			// Assert.assertTrue("There is no link for title: " + we.getText(), resultLink != null);
+
 		}
 
+		driver.quit();
 	}
 
 	/**
