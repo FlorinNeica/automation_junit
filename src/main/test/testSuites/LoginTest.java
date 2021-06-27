@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class LoginTest {
 
 	private WebDriver driver;
@@ -16,7 +18,8 @@ public class LoginTest {
 	@Before
 	public void beforeTest() {
 
-		System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
+		 WebDriverManager.chromedriver().setup();
+		//	System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
 
 		driver = new ChromeDriver();
 
