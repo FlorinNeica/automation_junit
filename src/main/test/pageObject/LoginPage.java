@@ -30,7 +30,7 @@ public class LoginPage {
 		btnLogin.click();
 	}
 
-	public ForgotPasswordPage navigateToforgottenPassword(WebDriver driver) {
+	public ForgotPasswordPage navigateToForgottenPassword(WebDriver driver) {
 
 		btnForgottenPassword.click();
 

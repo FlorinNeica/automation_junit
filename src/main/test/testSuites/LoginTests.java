@@ -20,7 +20,7 @@ public class LoginTests extends BaseClass {
 
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.login("home@acasa.com", "12345");
-		ForgotPasswordPage forgetPage = loginPage.navigateToforgottenPassword(driver);
+		ForgotPasswordPage forgetPage = loginPage.navigateToForgottenPassword(driver);
 		forgetPage.resetPassword();
 	}
 }
