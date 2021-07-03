@@ -1,4 +1,4 @@
-package drivermanagement;
+package driverManagement;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -10,7 +10,7 @@ public class BaseClass {
 
 	@BeforeClass
 	public static void initDriver() {
-		driver = WebBrowser.getDriver("CHROME");
+		driver = WebBrowser.getDriver(Browser.CHROME);
 
 	}
 

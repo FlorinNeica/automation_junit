@@ -1,12 +1,14 @@
-package pageobject;
+package testSuites;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;
 
-import drivermanagement.BaseClass;
+import driverManagement.BaseClass;
+import pageObject.ForgotPasswordPage;
+import pageObject.LoginPage;
 
-public class LoginTest extends BaseClass {
+public class LoginTests extends BaseClass {
 
 	@Before
 	public void navigate() {
