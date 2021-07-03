@@ -1,0 +1,24 @@
+package pageobject;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.support.PageFactory;
+
+import drivermanagement.BaseClass;
+
+public class LoginTest extends BaseClass {
+
+	@Before
+	public void navigate() {
+		navigateTo("http://siit.epizy.com/index.php?route=account/login");
+	}
+
+	@Test
+	public void testLogin() {
+
+		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+		loginPage.login("home@acasa.com", "12345");
+		ForgotPasswordPage forgetPage = loginPage.navigateToforgottenPassword(driver);
+		forgetPage.resetPassword();
+	}
+}
