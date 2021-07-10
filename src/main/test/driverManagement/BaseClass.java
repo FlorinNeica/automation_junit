@@ -10,7 +10,7 @@ public class BaseClass {
 
 	@BeforeClass
 	public static void initDriver() {
-		driver = WebBrowser.getDriver(Browser.CHROME);
+		driver = WebBrowser.getDriver(Browser.FIREFOX);
 
 	}
 
